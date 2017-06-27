@@ -1,0 +1,23 @@
+ <xml> <?xml version="1.0" encoding="UTF-8"?> 
+ <Unit> 
+	 <Type>Rifleman</Type> 
+	 <MaxHP>100</MaxHP> <SightRange>10</SightRange> 
+	 <Skills> 
+		 <UnitMovement> 
+			 <Label>Move</Label> 
+			 <Animation>move</Animation> 
+			 <Range>10</Range> 
+			 <Speed>6</Speed> 
+		 </UnitMovement> 
+		 <Grenade> 
+			 <Label>Throw Grenade</Label> 
+			 <Animation>shoot</Animation> 
+			 <Range>10</Range> 
+			 <Damage>20</Damage> 
+			 <AttackTime>0.348</AttackTime> 
+			 <ExplosionRadius>5</ExplosionRadius> 
+			 <NoOfUses>3</NoOfUses> 
+		 </Grenade> 
+	 </Skills> 
+ </Unit> 
+ </xml> 
