@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 495}
   m_MaxSize: {x: 14004, y: 14045}
   vertical: 0
-  controlID: 5509
+  controlID: 13625
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 495}
   m_MaxSize: {x: 10002, y: 14045}
   vertical: 1
-  controlID: 5510
+  controlID: 13626
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 5511
+  controlID: 13627
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,9 +366,9 @@ MonoBehaviour:
     height: 548
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f015feff
-    m_LastClickedID: -125456
-    m_ExpandedIDs: f015feff4c32feff32fbffff00000000
+    m_SelectedIDs: 74e2fdff
+    m_LastClickedID: -138636
+    m_ExpandedIDs: 7823ffff7e23ffffb025ffffb625ffff5427ffff5a27ffff62b5ffff94f1ffff9af1ffffa2f1ffffa8f1ffffdefbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,14 +418,14 @@ MonoBehaviour:
     width: 1148
     height: 548
   m_SceneLighting: 1
-  lastFramingTime: 2940.195703394444
+  lastFramingTime: 2348.592234505574
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -0.06875082, y: 0.061479647, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -0.06875082, y: 0.061479647, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -452,9 +452,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22
+    m_Target: 2.413151
     speed: 2
-    m_Value: 22
+    m_Value: 2.413151
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -528,19 +528,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Objects/sky_box/texture
+    - Assets/NGUI/Examples/Atlases/SciFi
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Objects/sky_box/texture
+  - Assets/NGUI/Examples/Atlases/SciFi
   m_LastFoldersGridSize: -1
   m_LastProjectPath: S:\KPU\4-Summer\Unity\2DShooting
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: fc490000
-    m_LastClickedID: 18940
-    m_ExpandedIDs: 4225000070440000e8490000024a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 183}
+    m_SelectedIDs: 50270000
+    m_LastClickedID: 10064
+    m_ExpandedIDs: 00000000f0260000822700009c270000982800003e29000062290000ae2a0000f02b0000162c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 4225000070440000e8490000024a000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000f0260000822700009c270000982800003e29000062290000ae2a0000f02b0000162c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -675,7 +675,7 @@ MonoBehaviour:
     y: 92
     width: 387
     height: 920
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 0.9550781}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
