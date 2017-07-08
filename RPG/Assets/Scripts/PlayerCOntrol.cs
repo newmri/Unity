@@ -16,6 +16,7 @@ public class PlayerCOntrol : MonoBehaviour {
     public AnimationClip idleAnim;
     public AnimationClip walkAnim;
     public AnimationClip attackAnim;
+    public AnimationClip skillAnim;
     public enum CharacterState
     {
         IDLE = 0,
@@ -34,6 +35,9 @@ public class PlayerCOntrol : MonoBehaviour {
         GetComponent<Animation>().Stop();
         GetComponent<Animation>()[attackAnim.name].wrapMode = WrapMode.Once;
         GetComponent<Animation>()[attackAnim.name].layer = 1;
+
+        GetComponent<Animation>()[skillAnim.name].wrapMode = WrapMode.Once;
+        GetComponent<Animation>()[skillAnim.name].layer = 1;
 
     }
 	
@@ -75,6 +79,7 @@ public class PlayerCOntrol : MonoBehaviour {
         if (charactercontroller.velocity.sqrMagnitude > 0.1f) state = CharacterState.WALK;
         else state = CharacterState.IDLE;
         if (Input.GetMouseButtonDown(0)) state = CharacterState.ATTACK;
+        if (Input.GetMouseButtonDown(1)) state = CharacterState.SKILL;
     }
 
     void AnimationControl()
@@ -95,7 +100,14 @@ public class PlayerCOntrol : MonoBehaviour {
                 }
                 else GetComponent<Animation>().CrossFade(attackAnim.name);
                 break;
-
+            case CharacterState.SKILL:
+                if(GetComponent<Animation>()[skillAnim.name].normalizedTime > 0.9f)
+                {
+                    GetComponent<Animation>()[skillAnim.name].normalizedTime = 0.0f;
+                    state = CharacterState.IDLE;
+                }
+                else GetComponent<Animation>().CrossFade(skillAnim.name);
+                break;
         }
     }
 

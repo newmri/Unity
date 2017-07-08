@@ -23,7 +23,6 @@ public class BeetleControl : MonoBehaviour {
 	void Start () {
         GetComponent<Animation>().wrapMode = WrapMode.Loop;
         GetComponent<Animation>().Play("move");
-        HP = 300;
 	}
 	
 	// Update is called once per frame
@@ -50,13 +49,16 @@ public class BeetleControl : MonoBehaviour {
         {
             state = BeetleState.HIT;
             Instantiate(HitEffect, other.transform.position, transform.rotation);
-            CheckDead(50);
+            CheckDead(Random.Range(10,50));
         }
     }
     void CheckDead(int damage)
     {
+        GameObject dmgObj = Instantiate(Resources.Load("Prefabs/DamageText"), Vector3.zero, Quaternion.identity) as GameObject;
+        dmgObj.SendMessage("SetText", damage.ToString());
+        dmgObj.SendMessage("SetTarget", gameObject);
+        dmgObj.SendMessage("SetColor", new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f)));
         HP -= damage;
-        Debug.Log("HP: " + HP.ToString());
         if(HP <= 0)
         {
             Instantiate(DeadEffect, transform.position, transform.rotation);

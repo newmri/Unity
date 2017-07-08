@@ -53,7 +53,9 @@
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\RenderEffect.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\TransformExtension.cs" />
      <Compile Include="Assets\Scripts\BeetleControl.cs" />
+     <Compile Include="Assets\Scripts\BillboardAndMoveUp.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
+     <Compile Include="Assets\Scripts\DelayAndDestroy.cs" />
      <Compile Include="Assets\Scripts\PlayerCOntrol.cs" />
      <Compile Include="Assets\Scripts\SpawnerControl.cs" />
      <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\effect_distortion_mask.shader" />
